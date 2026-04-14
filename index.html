@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>印 T-Shirt 一件 | 單件客製化時尚 · 專屬設計首選</title>
+  <!-- Google Fonts + 專業現代中英字體 -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', 'Noto Sans TC', sans-serif;
+      background: #FEFAF5;
+      color: #1E1B17;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    /* 專業容器，保留左右舒適空間 */
+    .container {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 0 60px 0 80px;
+    }
+
+    @media (max-width: 1100px) {
+      .container {
+        padding: 0 40px 0 56px;
+      }
+    }
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 24px 0 28px;
+      }
+    }
+
+    /* ========== HEADER 品牌導航 ========== */
+    .site-header {
+      background: #FFFFFF;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 18px rgba(0,0,0,0.02);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 20px 0;
+      gap: 20px;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .logo-main {
+      font-family: 'Inter', 'Noto Sans TC', sans-serif;
+      font-size: 1.9rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #C65D2E, #E8914A);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .logo-badge {
+      background: #F0E8DF;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      padding: 5px 14px;
+      border-radius: 40px;
+      color: #B45528;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 38px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #2C2823;
+      font-size: 0.95rem;
+      transition: 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: #D46B32;
+    }
+
+    .nav-btn {
+      background: #1F1C18;
+      color: white !important;
+      padding: 8px 26px;
+      border-radius: 40px;
+      font-weight: 600;
+    }
+
+    .nav-btn:hover {
+      background: #D46B32;
+      transform: translateY(-1px);
+    }
+
+    /* ========== HERO 主視覺 ========== */
+    .hero {
+      padding: 80px 0 56px 0;
+    }
+
+    .hero-grid {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+    }
+
+    .hero-left {
+      flex: 1.2;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      background: #F1E8DF;
+      padding: 6px 18px;
+      border-radius: 60px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #D56F38;
+      margin-bottom: 28px;
+    }
+
+    .hero-left h1 {
+      font-family: 'Inter', 'Noto Sans TC', sans-serif;
+      font-size: 3.6rem;
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 28px;
+      color: #1C1814;
+    }
+
+    .accent {
+      color: #E17B3A;
+    }
+
+    .hero-desc {
+      font-size: 1.08rem;
+      color: #4F4840;
+      max-width: 620px;
+      margin-bottom: 30px;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 42px;
+      margin: 36px 0 20px;
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #E17B3A;
+    }
+
+    .hero-right {
+      flex: 0.9;
+      background: linear-gradient(135deg, #FCF3EA, #FEEBDC);
+      border-radius: 56px;
+      padding: 45px 32px;
+      text-align: center;
+      box-shadow: 0 28px 42px -14px rgba(0,0,0,0.06);
+    }
+
+    .hero-right i {
+      font-size: 110px;
+      color: #DD7840;
+      opacity: 0.85;
+    }
+
+    /* 第一個連結樣式 (純錨點，無按鈕樣式) */
+    .first-link {
+      font-weight: 700;
+      color: #D4642C;
+      border-bottom: 2px solid rgba(212,100,44,0.3);
+      text-decoration: none;
+      transition: 0.2s;
+    }
+    .first-link:hover {
+      color: #AD4C1C;
+      border-bottom-color: #AD4C1C;
+    }
+
+    /* ========== 專業卡片區塊 ========== */
+    .pro-card {
+      background: #FFFFFF;
+      border-radius: 48px;
+      padding: 56px 56px;
+      margin: 56px 0;
+      box-shadow: 0 14px 32px rgba(0,0,0,0.02);
+      border: 1px solid #F0E6DD;
+    }
+
+    .section-title {
+      font-family: 'Inter', 'Noto Sans TC', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 28px;
+      color: #26211C;
+      border-left: 6px solid #E17B3A;
+      padding-left: 26px;
+    }
+
+    .subheading {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 32px 0 16px 0;
+      color: #2C241E;
+    }
+
+    /* 步驟網格 */
+    .step-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 32px;
+      margin: 48px 0 28px;
+    }
+
+    .step-card {
+      background: #FEFAF6;
+      border-radius: 36px;
+      padding: 28px 20px;
+      text-align: center;
+      border: 1px solid #F2E6DC;
+    }
+
+    .step-number {
+      background: #E17B3A;
+      width: 56px;
+      height: 56px;
+      border-radius: 60px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.7rem;
+      color: white;
+      margin-bottom: 24px;
+    }
+
+    /* 用途列表美化 */
+    .use-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin: 30px 0;
+    }
+    .use-tag {
+      background: #FEF5ED;
+      padding: 12px 26px;
+      border-radius: 100px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+
+    /* 優勢表格 */
+    .advantage-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #FEFAF6;
+      border-radius: 32px;
+      overflow: hidden;
+      margin: 38px 0;
+    }
+    .advantage-table th {
+      background: #26201B;
+      color: #FCF1E6;
+      padding: 18px 16px;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    .advantage-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid #EFE2D6;
+      color: #3C342C;
+    }
+
+    /* 第二個連結區塊 (錨點無按鈕感) */
+    .second-link-module {
+      background: #FEF3EA;
+      border-radius: 40px;
+      padding: 32px 44px;
+      margin-top: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    .second-link-text {
+      font-weight: 600;
+      color: #2C241E;
+      font-size: 1rem;
+    }
+    .second-anchor {
+      font-weight: 700;
+      background: #FFFFFF;
+      padding: 14px 34px;
+      border-radius: 60px;
+      text-decoration: none;
+      color: #E17B3A;
+      transition: 0.2s;
+      border: 1px solid #E2CDBB;
+      display: inline-block;
+    }
+    .second-anchor:hover {
+      background: #E17B3A;
+      color: white;
+      border-color: #E17B3A;
+      transform: translateY(-2px);
+    }
+
+    /* 通用列表 */
+    .pro-card ul, .pro-card ol {
+      padding-left: 28px;
+      margin: 22px 0;
+    }
+    .pro-card li {
+      margin-bottom: 12px;
+    }
+    .pro-card p {
+      margin-bottom: 20px;
+    }
+
+    /* 頁腳 */
+    .footer {
+      background: #141210;
+      color: #D6CABA;
+      padding: 64px 0 36px;
+      margin-top: 72px;
+    }
+    .footer-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 54px;
+    }
+    .footer-brand h3 {
+      font-family: 'Inter', 'Noto Sans TC', sans-serif;
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: #EFDCC8;
+      margin-bottom: 14px;
+    }
+    .footer-links-group {
+      display: flex;
+      gap: 74px;
+    }
+    .footer-links-group a {
+      display: block;
+      color: #CBB699;
+      text-decoration: none;
+      margin-bottom: 14px;
+      font-size: 0.9rem;
+      transition: 0.2s;
+    }
+    .footer-links-group a:hover {
+      color: #E88C4A;
+    }
+    .copyright {
+      text-align: center;
+      margin-top: 54px;
+      padding-top: 32px;
+      border-top: 1px solid #2D2620;
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 880px) {
+      .pro-card {
+        padding: 36px 28px;
+      }
+      .hero-left h1 {
+        font-size: 2.5rem;
+      }
+      .header-inner {
+        flex-direction: column;
+      }
+      .hero-stats {
+        flex-wrap: wrap;
+        gap: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo-area">
+      <span class="logo-main">單件印製</span>
+      <span class="logo-badge">ONE-OFF CUSTOM</span>
+    </div>
+    <div class="nav-links">
+      <a href="#what-is">什麼是單件Tee</a>
+      <a href="#process">製作流程</a>
+      <a href="#advantages">優勢應用</a>
+      <a href="#future" class="nav-btn">立即客製</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container hero">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="hero-tag"><i class="fas fa-tshirt"></i> 一件即可 · 專屬設計</div>
+        <h1>印 T-Shirt 一件：<span class="accent">單件客製化時尚與個人專屬設計首選</span></h1>
+        <p class="hero-desc">印 T-Shirt 一件（單件客製T恤）已經成為現代客製化時尚中非常受歡迎的一種服務。過去很多人以為印 T-Shirt 只能大量訂製，但隨著數碼印刷技術的進步，現在只需要一件也可以完成專屬設計。不論是個人穿搭、紀念禮物、生日驚喜，還是品牌測試樣品，印 T-Shirt 一件都能快速實現你的創意想法。</p>
+        <!-- 第一個連結：置於 intro 段落內，純錨點無按鈕，錨點文字「印 t shirt 一 件」 -->
+        <p class="hero-desc">✨ 立即打造專屬風格：<a href="https://bestgift.com.hk/pages/tshirt" target="_blank" rel="noopener noreferrer" class="first-link"><strong>印 t shirt 一 件</strong></a> — 高品質數位直噴，無需起訂量，設計你的獨一無二T恤。</p>
+        <div class="hero-stats">
+          <div class="stat-item"><span class="stat-number">1件</span><span>即可製作</span></div>
+          <div class="stat-item"><span class="stat-number">24h</span><span>快速出貨</span></div>
+          <div class="stat-item"><span class="stat-number">100%</span><span>全客製化</span></div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <i class="fas fa-print"></i>
+        <i class="fas fa-palette" style="font-size: 44px; margin-top: 24px; display: block; color: #C96F3A;"></i>
+        <p style="margin-top: 24px; font-weight: 500;">單件數位直噴 · 無需製版</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- 什麼是印 T-Shirt 一件 -->
+    <div class="pro-card" id="what-is">
+      <h2 class="section-title">什麼是印 T-Shirt 一件？</h2>
+      <p>印 T-Shirt 一件指的是只製作單一件客製化T恤，而不需要最低訂購數量的印刷服務。用戶可以自由設計圖案、文字或照片，然後直接印在T恤上。這種模式非常適合個人用戶，因為不需要批量生產，也不需要庫存壓力。你可以根據自己的喜好打造獨一無二的設計，讓每一件T恤都具有專屬意義。</p>
+      <div style="background: #FEF3EA; border-radius: 28px; padding: 24px; margin-top: 36px;"><i class="fas fa-lightbulb"></i> <strong>設計靈感：</strong> 照片、手繪插畫、勵志語錄或品牌Logo，都能完美呈現在單件T恤上。</div>
+    </div>
+
+    <!-- 為什麼這麼受歡迎 + 應用場景 -->
+    <div class="pro-card">
+      <h2 class="section-title">為什麼印 T-Shirt 一件這麼受歡迎？</h2>
+      <p>印 T-Shirt 一件之所以受歡迎，是因為它滿足了現代人對個性化與獨特性的需求。每個人都希望自己的穿搭與眾不同，而單件客製化正好提供了這種可能。另外，它的靈活性也非常高，不論是臨時活動、特別紀念日，還是送禮需求，都可以快速完成設計與製作。相比大量訂製，單件印刷更加自由，也更適合快速決策的情況。</p>
+      
+      <h3 class="subheading">📌 印 T-Shirt 一件的應用場景</h3>
+      <div class="use-list">
+        <span class="use-tag"><i class="fas fa-birthday-cake"></i> 個人生日紀念T恤</span>
+        <span class="use-tag"><i class="fas fa-heart"></i> 情侶或家庭專屬設計</span>
+        <span class="use-tag"><i class="fas fa-gift"></i> 創意禮物與驚喜贈送</span>
+        <span class="use-tag"><i class="fas fa-camera"></i> 社交媒體拍攝穿搭</span>
+        <span class="use-tag"><i class="fas fa-palette"></i> 設計作品樣品測試</span>
+        <span class="use-tag"><i class="fas fa-calendar-alt"></i> 特別活動紀念服裝</span>
+      </div>
+    </div>
+
+    <!-- 製作流程 -->
+    <div class="pro-card" id="process">
+      <h2 class="section-title">印 T-Shirt 一件的製作流程</h2>
+      <p>印 T-Shirt 一件的製作流程通常非常簡單。首先用戶需要提供設計內容，可以是圖片、文字或完整的設計稿。接著選擇T恤款式與顏色，然後進行線上預覽確認效果。在確認設計後，系統會使用數碼印刷技術將圖案直接印製在T恤上。整個過程不需要製版，因此速度非常快，非常適合單件製作需求。最後經過品質檢查與包裝，就可以直接出貨給客戶。</p>
+      <div class="step-grid">
+        <div class="step-card"><div class="step-number">1</div><strong>上傳設計</strong><br>JPG/PNG/AI/PSD</div>
+        <div class="step-card"><div class="step-number">2</div><strong>選款式顏色</strong><br>圓領/V領/多種底色</div>
+        <div class="step-card"><div class="step-number">3</div><strong>線上預覽</strong><br>即時模擬效果</div>
+        <div class="step-card"><div class="step-number">4</div><strong>數位直噴</strong><br>無需製版</div>
+        <div class="step-card"><div class="step-number">5</div><strong>品檢包裝</strong><br>快速出貨</div>
+      </div>
+    </div>
+
+    <!-- 優點 + 優勢表格 -->
+    <div class="pro-card" id="advantages">
+      <h2 class="section-title">印 T-Shirt 一件的優點</h2>
+      <p>印 T-Shirt 一件最大的優點就是沒有最低訂購限制，用戶可以自由製作一件屬於自己的T恤。其次，它的製作速度非常快，非常適合急單或臨時需求。同時，數碼印刷技術讓設計可以呈現高品質細節，無論是照片還是複雜圖案，都能清晰呈現。此外，成本也相對合理，不需要批量生產就能享受客製化服務，非常適合個人用戶使用。</p>
+      
+      <table class="advantage-table">
+        <thead><tr><th>項目</th><th>說明</th></tr></thead>
+        <tbody>
+          <tr><td>無最低訂購量</td><td>一件也可以製作</td></tr>
+          <tr><td>高自由度</td><td>完全客製化設計</td></tr>
+          <tr><td>快速製作</td><td>數碼印刷即時處理</td></tr>
+          <tr><td>適合個人</td><td>非常適合單人需求</td></tr>
+          <tr><td>高品質效果</td><td>圖案清晰不易褪色</td></tr>
+          <tr><td>靈活應用</td><td>多種場合都適合使用</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 如何設計一件好的印 T-Shirt + 未來趨勢 + 第二個連結 -->
+    <div class="pro-card" id="future">
+      <h2 class="section-title">如何設計一件好的印 T-Shirt</h2>
+      <p>設計印 T-Shirt 一件時，首先要確定主題，例如搞笑風格、紀念風格或簡約風格。接著選擇合適的顏色搭配，讓整體視覺更加協調。文字設計要簡潔清晰，圖片則需要高解析度，這樣印出來的效果才會更專業。位置設計也很重要，例如胸前、背部或袖口，都會影響整體風格。</p>
+      
+      <h3 class="subheading">印 T-Shirt 一件的未來趨勢</h3>
+      <p>隨著客製化需求增加，印 T-Shirt 一件將會變得更加普及。未來的設計平台會更加智能化，用戶可以直接在線生成設計甚至使用AI自動設計圖案。同時，環保材質與高品質印刷技術也會進一步提升，使單件T恤更加耐用與環保，滿足現代消費者需求。</p>
+      
+      <!-- 第二個連結：相關錨點文字，純連結無按鈕衝突 -->
+      <div class="second-link-module">
+        <span class="second-link-text"><i class="fas fa-chart-line"></i> 探索更多客製化服飾與設計靈感：</span>
+        <a href="https://merry-donut-b2af7f.netlify.app/" target="_blank" rel="noopener noreferrer" class="second-anchor">單件T恤創意平台 →</a>
+      </div>
+    </div>
+
+    <!-- 結論 -->
+    <div class="pro-card" style="background: linear-gradient(115deg, #FFFFFF, #FEF7EF);">
+      <h2 class="section-title">結論：一件專屬，無限創意</h2>
+      <p>印 T-Shirt 一件已經改變了傳統服裝製作方式，讓客製化變得更加簡單與普及。它不僅滿足個人創意需求，也適合各種紀念與禮物用途。無論是時尚穿搭還是特別紀念，一件客製化T恤都能展現獨特價值。隨著技術不斷進步，印 T-Shirt 一件將會成為未來個性化時尚的重要趨勢之一。</p>
+      <p>從個人紀念到品牌測試，每一件單件印製的T恤都承載著專屬的故事與溫度。現在就開始你的設計旅程，擁有全世界獨一無二的那一件。</p>
+      <div style="margin-top: 36px; text-align: center; background: #F9F0E6; padding: 24px; border-radius: 42px;"><i class="fas fa-tshirt"></i> 立即設計你的第一件專屬T恤 — 一件也能完美印製。</div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <h3>單件印製</h3>
+      <p style="max-width: 280px; margin-top: 12px;">高品質單件T恤客製化 · 數位直噴 · 無起訂量 · 個人專屬時尚</p>
+    </div>
+    <div class="footer-links-group">
+      <div>
+        <a href="#what-is">什麼是單件Tee</a>
+        <a href="#process">製作流程</a>
+        <a href="#advantages">優勢應用</a>
+        <a href="#future">未來趨勢</a>
+      </div>
+      <div>
+        <a href="https://bestgift.com.hk/pages/tshirt" target="_blank">印 t shirt 一 件</a>
+        <a href="https://merry-donut-b2af7f.netlify.app/" target="_blank">創意設計工具</a>
+        <a href="#">支援中心</a>
+      </div>
+    </div>
+  </div>
+  <div class="container copyright">
+    <p>© 2025 單件印製 — 一件起印 · 自由設計 · 讓每個想法都穿上身。</p>
+  </div>
+</footer>
+
+<script>
+  // 平滑滾動
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === "#" || targetId === "") return;
+      const targetElem = document.querySelector(targetId);
+      if (targetElem) {
+        e.preventDefault();
+        targetElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+</body>
+</html>
